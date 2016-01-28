@@ -22,7 +22,9 @@ $(document).ready(function() {
         nextButton: '.swiper-button-next',
         prevButton: '.swiper-button-prev',
         parallax: true,
-        speed: 1000
+        speed: 1000,
+        autoplay: false,
+        autoplayDisableOnInteraction: true
     });
 
     // Initialize Search
@@ -36,16 +38,16 @@ $(document).ready(function() {
         onSearchSubmit: function(searchString) {
             console.log("Search for: " + searchString);
         },
-        // Callback that will be run whenever you enter a key into search box. 
-        // Perform any live search here.  
+        // Callback that will be run whenever you enter a key into search box.
+        // Perform any live search here.
         onKeyEnter: function(searchString) {
             console.log("Live search for: " + searchString);
             var searchField = $('#overlay-search');
             var searchResults = $('.search-results');
 
-            /* 
+            /*
                 Do AJAX call here to get search results
-                and update DOM and use the following block 
+                and update DOM and use the following block
                 'searchResults.find('.result-name').each(function() {...}'
                 inside the AJAX callback to update the DOM
             */
