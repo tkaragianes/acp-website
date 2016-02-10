@@ -5,16 +5,19 @@
     <meta charset="utf-8" />
     <title>Studies - Arcade Creek Project</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
-    <link rel="apple-touch-icon" href="pages/ico/60.png">
-    <link rel="apple-touch-icon" sizes="76x76" href="pages/ico/76.png">
-    <link rel="apple-touch-icon" sizes="120x120" href="pages/ico/120.png">
-    <link rel="apple-touch-icon" sizes="152x152" href="pages/ico/152.png">
+    <link href="/assets/images/touch/creek-192.png" rel="apple-touch-icon" />
+    <link href="/assets/images/touch/creek-76.png" rel="apple-touch-icon" sizes="76x76" />
+    <link href="/assets/images/touch/creek-120.png" rel="apple-touch-icon" sizes="120x120" />
+    <link href="/assets/images/touch/creek-152.png" rel="apple-touch-icon" sizes="152x152" />
+    <link href="/assets/images/touch/creek-180.png" rel="apple-touch-icon" sizes="180x180" />
+    <link href="/assets/images/touch/creek-192.png" rel="icon" sizes="192x192" />
+    <link href="/assets/images/touch/creek-128.png" rel="icon" sizes="128x128" />
     <link rel="icon" type="image/x-icon" href="favicon.ico" />
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-touch-fullscreen" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="default">
-    <meta content="" name="description" />
-    <meta content="" name="author" />
+    <meta content="The Arcade Creek Project is a student-run environmental monitoring project tracking Northern California's largest urban watershed, the Arcade Creek." name="description" />
+    <meta content="Arcade Creek Project - Web Team" name="author" />
     <!-- BEGIN PLUGINS -->
     <link href="/assets/plugins/pace/pace-theme-flash.css" rel="stylesheet" type="text/css" />
     <link href="/assets/plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
@@ -22,26 +25,26 @@
     <link href="/assets/plugins/swiper/css/swiper.css" rel="stylesheet" type="text/css" media="screen" />
     <!-- END PLUGINS -->
     <!-- BEGIN PAGES CSS -->
-    <link class="main-stylesheet" href="/assets/pages/css/pages.css" rel="stylesheet" type="text/css" />
+    <link class="main-stylesheet" href="/styles/main.css" rel="stylesheet" type="text/css" />
     <link href="/assets/pages/css/pages-icons.css" rel="stylesheet" type="text/css" />
     <!-- BEGIN PAGES CSS -->
   </head>
-  <body>
+  <body style="background-color: #3db657;">
     <!-- BEGIN HEADER -->
-    <nav class="header bg-header transparent-light" data-pages="header" data-pages-header="autoresize" data-pages-resize-class="dark">
+    <nav class="header bg-header transparent-light " data-pages="header" data-pages-header="autoresize" data-pages-resize-class="dark">
       <div class="container relative">
         <!-- BEGIN LEFT CONTENT -->
         <div class="pull-left">
           <!-- .header-inner Allows to vertically Align elements to the Center-->
-          <div class="header-inner">
+          <a href="/index.html" class="header-inner">
             <!-- BEGIN LOGO -->
-            <img src="/assets/images/logo_white.png" width="152" height="21" data-src-retina="/assets/images/logo_white_2x.png" class="" alt="">
-          </div>
+            <img src="/assets/images/creek-logo-white.png" width="100" data-src-retina="/assets/images/creek-logo-white.png" class="logo" alt="">
+            <img src="/assets/images/creek-logo-black.png" width="100" data-src-retina="/assets/images/creek-logo-black.png" class="alt" alt="">
+          </a>
         </div>
         <!-- BEGIN HEADER TOGGLE FOR MOBILE & TABLET -->
         <div class="pull-right">
           <div class="header-inner">
-            <a href="#" class="search-toggle visible-sm-inline visible-xs-inline p-r-10" data-toggle="search"><i class="fs-14 pg-search"></i></a>
             <div class="visible-sm-inline visible-xs-inline menu-toggler pull-right p-l-10" data-pages="header-toggle" data-pages-element="#header">
               <div class="one"></div>
               <div class="two"></div>
@@ -63,55 +66,24 @@
           <div class="header-inner">
             <ul class="menu">
               <li>
-                <a href="index.html">Home </a>
-              </li>
-              <li class="classic">
-                <a href="javascript:;">
-                    Elements  <i class="pg-arrow_minimize m-l-5"></i>
-                  </a>
-                <nav class="classic ">
-                  <span class="arrow"></span>
-                  <ul>
-                    <li>
-                      <a href="http://pages.revox.io/frontend/1.0/doc/#color" target="_blank">Colors</a>
-                    </li>
-                    <li>
-                      <a href="http://pages.revox.io/frontend/1.0/doc/#icons" target="_blank">Icons</a>
-                    </li>
-                    <li>
-                      <a href="http://pages.revox.io/frontend/1.0/doc/#buttons" target="_blank">Buttons</a>
-                    </li>
-                    <li>
-                      <a href="http://pages.revox.io/frontend/1.0/doc/#modals" target="_blank">Modals</a>
-                    </li>
-                    <li>
-                      <a href="http://pages.revox.io/frontend/1.0/doc/#progress_bars" target="_blank">Progress &amp; Activity</a>
-                    </li>
-                    <li>
-                      <a href="http://pages.revox.io/frontend/1.0/doc/#accordians" target="_blank">Accordians</a>
-                    </li>
-                    <li>
-                      <a href="http://pages.revox.io/frontend/1.0/doc/#tabs" target="_blank">Tabs</a>
-                    </li>
-                  </ul>
-                </nav>
+                <a href="/index.html">Home</a>
               </li>
               <li>
-                <a href="pricing.html">Pricing </a>
+                <a href="/about/index.html">About</a>
               </li>
               <li>
-                <a href="portfolio.html" class="active">Portfolio </a>
+                <a href="/studies/index.html" class="active">Studies</a>
               </li>
               <li>
-                <a href="contact.html">Contact Us</a>
+                <a href="/recognition/index.html">Recognition</a>
+              </li>
+              <li>
+                <a href="/contact/index.html">Contact Us</a>
               </li>
             </ul>
-            <a href="#" class="search-toggle hidden-xs hidden-sm" data-toggle="search"><i class="fs-14 pg-search"></i></a>
             <!-- BEGIN COPYRIGHT FOR MOBILE -->
-            <div class="font-arial m-l-35 m-r-35 m-b-20  visible-sm visible-xs m-t-20">
-              <p class="fs-11 no-margin small-text p-b-20">Exclusive only at ,Themeforest. See Standard licenses & Extended licenses
-              </p>
-              <p class="fs-11 small-text muted">Copyright &copy; 2014 REVOX</p>
+            <div class="font-arial m-l-35 m-r-35 m-b-20 visible-sm visible-xs m-t-20">
+              <p class="fs-11 small-text muted">Copyright &copy; 2016 Arcade Creek Project</p>
             </div>
             <!-- END COPYRIGHT FOR MOBILE -->
           </div>
@@ -121,227 +93,133 @@
     </nav>
     <!-- END HEADER -->
     <!-- BEGIN HERO WITH PARALLAX -->
-    <section class="demo-hero-5" data-pages-bg-image="/assets/images/gallery_hero_1.jpg">
+    <!-- <section class="studies-hero demo-hero-5" data-pages-bg-image="/assets/images/gallery_hero_1.jpg">
       <div class="container-xs-height full-height">
         <div class="col-xs-height col-middle text-center">
           <h1 class="text-white inner">Your in good hands</h1>
         </div>
       </div>
-    </section>
+    </section> -->
     <!-- END HERO WITH PARALLAX -->
     <!-- BEGIN PORTFOLIO SECTION -->
-    <section class="p-b-40 p-t-40">
+    <section style="padding-top: 140px;">
       <div class="container">
         <div class="m-b-30">
-          <h1 class="text-center ">Studies</h1>
-          <div class="b-b b-grey m-t-30"></div>
-          <div class="col-md-9 col-md-offset-3 col-sm-8 col-sm-offset-2 p-t-15 p-b-15">
-            <ul class="no-style no-margin">
-              <li class="m-r-20 m-l-20 inline sm-block text-center sm-p-b-5 sm-m-b-5 b-grey sm-b-b">
-                <a href="#" class="link active text-black fs-13 block-title ">Logos</a>
-              </li>
-              <li class="m-r-20 m-l-20 inline sm-block text-center sm-p-b-5 sm-m-b-5 b-grey sm-b-b">
-                <a href="#" class="link active text-black fs-13 block-title">Advertising</a>
-              </li>
-              <li class="m-r-20 m-l-20 inline sm-block text-center sm-p-b-5 sm-m-b-5 b-grey sm-b-b">
-                <a href="#" class="link active text-black fs-13 block-title">Art</a>
-              </li>
-              <li class="m-r-20 m-l-20 inline sm-block text-center sm-p-b-5 sm-m-b-5 b-grey sm-b-b">
-                <a href="#" class="link active text-black fs-13 block-title">Law</a>
-              </li>
-              <li class="m-r-20 m-l-20 inline sm-block text-center ">
-                <a href="#" class="link active text-black fs-13 block-title">Constructions</a>
-              </li>
-            </ul>
-          </div>
+          <h1 class="text-center text-white">Meet the Studies</h1>
+          <!-- <div class="b-b b-grey m-t-30"></div> -->
         </div>
       </div>
-      <div class="gallery">
-        <div class="grid-sizer col-sm-3 col-xs-6 no-padding"></div>
-        <section class="gallery-item col-md-3 col-xs-6 no-padding hover-zoom">
-          <div class="inner bottom-left bottom-right padding-30">
-            <h5 class="block-title text-white no-margin">Overview</h5>
-            <h6 class="block-title fs-11 hint-text text-white m-t-5 m-b-0">03 Nov 2015</h6>
-            <p class="font-arial fs-11 text-white muted m-t-5 m-b-0">Logo design, Web Design and Branding</p>
-          </div>
-          <div class="ar-3-2">
-            <div data-pages-bg-image="/assets/images/gallery_1.jpg" data-bg-overlay="black" data-overlay-opacity="0.4">
-            </div>
-          </div>
-        </section>
-        <section class="gallery-item col-md-3 col-xs-6 no-padding hover-zoom">
-          <div class="inner bottom-left bottom-right padding-30">
-            <h5 class="block-title text-white no-margin">Bio Assay</h5>
-            <h6 class="block-title fs-11 hint-text text-white m-t-5 m-b-0">03 Nov 2015</h6>
-            <p class="font-arial fs-11 text-white muted m-t-5 m-b-0">Logo design, Web Design and Branding</p>
-          </div>
-          <div class="ar-3-2">
-            <div data-pages-bg-image="/assets/images/gallery_1.jpg" data-bg-overlay="black" data-overlay-opacity="0.4">
-            </div>
-          </div>
-        </section>
-        <section class="gallery-item col-md-3 col-xs-6 no-padding hover-zoom">
-          <div class="inner bottom-left bottom-right padding-30">
-            <h5 class="block-title text-white no-margin">Bio Assessment</h5>
-            <h6 class="block-title fs-11 hint-text text-white m-t-5 m-b-0">03 Nov 2015</h6>
-            <p class="font-arial fs-11 text-white muted m-t-5 m-b-0">Logo design, Web Design and Branding</p>
-          </div>
-          <div class="ar-3-2">
-            <div data-pages-bg-image="/assets/images/gallery_1.jpg" data-bg-overlay="black" data-overlay-opacity="0.4">
-            </div>
-          </div>
-        </section>
-        <section class="gallery-item col-md-3 col-xs-6 no-padding hover-zoom">
-          <div class="inner bottom-left bottom-right padding-30">
-            <h5 class="block-title text-white no-margin">Botany</h5>
-            <h6 class="block-title fs-11 hint-text text-white m-t-5 m-b-0">03 Nov 2015</h6>
-            <p class="font-arial fs-11 text-white muted m-t-5 m-b-0">Logo design, Web Design and Branding</p>
-          </div>
-          <div class="ar-3-2">
-            <div data-pages-bg-image="/assets/images/gallery_1.jpg" data-bg-overlay="black" data-overlay-opacity="0.4">
-            </div>
-          </div>
-        </section>
-        <section class="gallery-item col-md-3 col-xs-6 no-padding hover-zoom">
-          <div class="inner bottom-left bottom-right padding-30">
-            <h5 class="block-title text-white no-margin">Chemistry</h5>
-            <h6 class="block-title fs-11 hint-text text-white m-t-5 m-b-0">03 Nov 2015</h6>
-            <p class="font-arial fs-11 text-white muted m-t-5 m-b-0">Logo design, Web Design and Branding</p>
-          </div>
-          <div class="ar-3-2">
-            <div data-pages-bg-image="/assets/images/gallery_1.jpg" data-bg-overlay="black" data-overlay-opacity="0.4">
-            </div>
-          </div>
-        </section>
-        <section class="gallery-item col-md-3 col-xs-6 no-padding hover-zoom">
-          <div class="inner bottom-left bottom-right padding-30">
-            <h5 class="block-title text-white no-margin">Habitat</h5>
-            <h6 class="block-title fs-11 hint-text text-white m-t-5 m-b-0">03 Nov 2015</h6>
-            <p class="font-arial fs-11 text-white muted m-t-5 m-b-0">Logo design, Web Design and Branding</p>
-          </div>
-          <div class="ar-3-2">
-            <div data-pages-bg-image="/assets/images/gallery_1.jpg" data-bg-overlay="black" data-overlay-opacity="0.4">
-            </div>
-          </div>
-        </section>
-        <section class="gallery-item col-md-3 col-xs-6 no-padding hover-zoom">
-          <div class="inner bottom-left bottom-right padding-30">
-            <h5 class="block-title text-white no-margin">Long Mapping</h5>
-            <h6 class="block-title fs-11 hint-text text-white m-t-5 m-b-0">03 Nov 2015</h6>
-            <p class="font-arial fs-11 text-white muted m-t-5 m-b-0">Logo design, Web Design and Branding</p>
-          </div>
-          <div class="ar-3-2">
-            <div data-pages-bg-image="/assets/images/gallery_1.jpg" data-bg-overlay="black" data-overlay-opacity="0.4">
-            </div>
-          </div>
-        </section>
-        <section class="gallery-item col-md-3 col-xs-6 no-padding hover-zoom">
-          <div class="inner bottom-left bottom-right padding-30">
-            <h5 class="block-title text-white no-margin">Outreach</h5>
-            <h6 class="block-title fs-11 hint-text text-white m-t-5 m-b-0">03 Nov 2015</h6>
-            <p class="font-arial fs-11 text-white muted m-t-5 m-b-0">Logo design, Web Design and Branding</p>
-          </div>
-          <div class="ar-3-2">
-            <div data-pages-bg-image="/assets/images/gallery_1.jpg" data-bg-overlay="black" data-overlay-opacity="0.4">
-            </div>
-          </div>
-        </section>
-        <section class="gallery-item col-md-3 col-xs-6 no-padding hover-zoom">
-          <div class="inner bottom-left bottom-right padding-30">
-            <h5 class="block-title text-white no-margin">Restoration</h5>
-            <h6 class="block-title fs-11 hint-text text-white m-t-5 m-b-0">03 Nov 2015</h6>
-            <p class="font-arial fs-11 text-white muted m-t-5 m-b-0">Logo design, Web Design and Branding</p>
-          </div>
-          <div class="ar-3-2">
-            <div data-pages-bg-image="/assets/images/gallery_1.jpg" data-bg-overlay="black" data-overlay-opacity="0.4">
-            </div>
-          </div>
-        </section>
-        <section class="gallery-item col-md-3 col-xs-6 no-padding hover-zoom">
-          <div class="inner bottom-left bottom-right padding-30">
-            <h5 class="block-title text-white no-margin">Sediments</h5>
-            <h6 class="block-title fs-11 hint-text text-white m-t-5 m-b-0">03 Nov 2015</h6>
-            <p class="font-arial fs-11 text-white muted m-t-5 m-b-0">Logo design, Web Design and Branding</p>
-          </div>
-          <div class="ar-3-2">
-            <div data-pages-bg-image="/assets/images/gallery_1.jpg" data-bg-overlay="black" data-overlay-opacity="0.4">
-            </div>
-          </div>
-        </section>
-        <section class="gallery-item col-md-3 col-xs-6 no-padding hover-zoom">
-          <div class="inner bottom-left bottom-right padding-30">
-            <h5 class="block-title text-white no-margin">Technology</h5>
-            <h6 class="block-title fs-11 hint-text text-white m-t-5 m-b-0">03 Nov 2015</h6>
-            <p class="font-arial fs-11 text-white muted m-t-5 m-b-0">Logo design, Web Design and Branding</p>
-          </div>
-          <div class="ar-3-2">
-            <div data-pages-bg-image="/assets/images/gallery_1.jpg" data-bg-overlay="black" data-overlay-opacity="0.4">
-            </div>
-          </div>
-        </section>
-        <section class="gallery-item col-md-3 col-xs-6 no-padding hover-zoom">
-          <div class="inner bottom-left bottom-right padding-30">
-            <h5 class="block-title text-white no-margin">Vertebrates</h5>
-            <h6 class="block-title fs-11 hint-text text-white m-t-5 m-b-0">03 Nov 2015</h6>
-            <p class="font-arial fs-11 text-white muted m-t-5 m-b-0">Logo design, Web Design and Branding</p>
-          </div>
-          <div class="ar-3-2">
-            <div data-pages-bg-image="/assets/images/gallery_1.jpg" data-bg-overlay="black" data-overlay-opacity="0.4">
-            </div>
-          </div>
-        </section>
-        <!-- START GALLERY ITEM
-        <div class="gallery-item col-sm-3 col-xs-6 no-padding hover-zoom">
-          <div class="inner bottom-left bottom-right padding-30">
-            <h5 class="block-title text-white no-margin">IGNITEAT</h5>
-            <h6 class="block-title fs-11 hint-text text-white m-t-5 m-b-0">03 Nov 2015</h6>
-            <p class="font-arial fs-11 text-white muted m-t-5 m-b-0">Logo design, Web Design and Branding</p>
-          </div>
-          <div class="ar-1-1">
-            <div data-pages-bg-image="/assets/images/gallery_2.jpg" data-bg-overlay="black" data-overlay-opacity="0.4">
-            </div>
-          </div>
-        </div> -->
+      <div class="studies-grid">
+        <figure class="studies-overview">
+					<!-- <img src="/assets/images/studies/overview.jpg" alt="Studies Overview" class="portrait ar-3-2"/> -->
+					<figcaption>
+						<h2>Overview</h2>
+						<p>How do studies work?</p>
+						<a href="#">View more</a>
+					</figcaption>
+				</figure>
+        <figure class="studies-bioassay">
+					<!-- <img src="/assets/images/studies/bioassay/bioassay-1.jpg" alt="BioAssay Overview" class="ar-3-2 landscape"/> -->
+					<figcaption>
+						<h2>Bio Assay</h2>
+						<p>Testing water quality with Ceriodaphnia dubia.</p>
+						<a href="/studies/bioassay/index.html">View more</a>
+					</figcaption>
+				</figure>
+        <figure class="studies-bioassessment">
+					<!-- <img src="/assets/images/studies/bioassessment/bioassessment-1.jpg" alt="BioAssessment Overview" class="ar-3-2 portrait"/> -->
+					<figcaption>
+						<h2>Bio Assessment</h2>
+						<p>Testing water quality with Ceriodaphnia dubia.</p>
+						<a href="/studies/bioassessment/index.html">View more</a>
+					</figcaption>
+				</figure>
+        <figure class="studies-botany">
+					<!-- <img src="/assets/images/studies/botany/botany-1.jpg" alt="Botany Overview" class="ar-3-2 portrait"/> -->
+					<figcaption>
+						<h2>Botany</h2>
+						<p>Testing water quality with Ceriodaphnia dubia.</p>
+						<a href="/studies/botany/index.html">View more</a>
+					</figcaption>
+				</figure>
+        <figure class="studies-chemistry">
+					<!-- <img src="/assets/images/studies/chemistry/chemistry-1.jpg" alt="Chemistry Overview" class="ar-3-2 portrait"/> -->
+					<figcaption>
+						<h2>Chemistry</h2>
+						<p>Testing water quality with Ceriodaphnia dubia.</p>
+						<a href="/studies/bioassay/chemistry.html">View more</a>
+					</figcaption>
+				</figure>
+        <figure class="studies-habitat">
+					<!-- <img src="/assets/images/studies/habitat/habitat-1.jpg" alt="Habitat Overview" class="ar-3-2 portrait"/> -->
+					<figcaption>
+						<h2>Habitat</h2>
+						<p>Testing water quality with Ceriodaphnia dubia.</p>
+						<a href="/studies/habitat/index.html">View more</a>
+					</figcaption>
+				</figure>
+        <figure class="studies-longmapping">
+					<!-- <img src="/assets/images/studies/longmapping/longmapping-1.jpg" alt="Long Mapping Overview" class="ar-3-2 landscape"/> -->
+					<figcaption>
+						<h2>Long Mapping</h2>
+						<p>Testing water quality with Ceriodaphnia dubia.</p>
+						<a href="/studies/longmapping/index.html">View more</a>
+					</figcaption>
+				</figure>
+        <figure class="studies-outreach">
+					<!-- <img src="/assets/images/studies/outreach/outreach-1.jpg" alt="Outreach Overview" class="ar-3-2 landscape"/> -->
+					<figcaption>
+						<h2>Outreach</h2>
+						<p>Testing water quality with Ceriodaphnia dubia.</p>
+						<a href="/studies/outreach/index.html">View more</a>
+					</figcaption>
+				</figure>
+        <figure class="studies-restoration">
+					<!-- <img src="/assets/images/studies/restoration/restoration-1.jpg" alt="Restoration Overview" class=" ar-3-2 portrait"/> -->
+					<figcaption>
+						<h2>Restoration</h2>
+						<p>Testing water quality with Ceriodaphnia dubia.</p>
+						<a href="/studies/restoration/index.html">View more</a>
+					</figcaption>
+				</figure>
+        <figure class="studies-sediments">
+					<!-- <img src="/assets/images/studies/sediments/sediments-1.jpg" alt="Sediments Overview" class="ar-3-2 landscape"/> -->
+					<figcaption>
+						<h2>Sediments</h2>
+						<p>Testing water quality with Ceriodaphnia dubia.</p>
+						<a href="/studies/sediments/index.html">View more</a>
+					</figcaption>
+				</figure>
+        <figure class="studies-technology">
+					<!-- <img src="/assets/images/studies/technology/technology-1.jpg" alt="Technology Overview" class="ar-3-2 landscape"/> -->
+					<figcaption>
+						<h2>Technology</h2>
+						<p>Testing water quality with Ceriodaphnia dubia.</p>
+						<a href="/studies/technology/index.html">View more</a>
+					</figcaption>
+				</figure>
+        <figure class="studies-vertebrates">
+					<!-- <img src="/assets/images/studies/vertebrates/vertebrates-1.jpg" alt="Vertebrates Overview" class="ar-3-2 landscape"/> -->
+					<figcaption>
+						<h2>Vertebrates</h2>
+						<p>Testing water quality with Ceriodaphnia dubia.</p>
+						<a href="/studies/vertebrates/index.html">View more</a>
+					</figcaption>
+				</figure>
       </div>
     </section>
     <!-- END PORTFOLIO SECTION -->
-    <!-- BEGIN CONTENT SECTION -->
-    <section class="p-b-70 p-t-40">
-      <div class="container">
-        <h5 class="block-title hint-text no-margin">Explore</h5>
-        <h5>
-            Our long standing vision has been to bypass the usual admin dashboard structure, and move forward with a more
-            sophisticated yet simple framework that would create a credible impact on the many conventional dashboard users.</h5>
-      </div>
-    </section>
-    <!-- END CONTENT SECTION -->
-    <section class="p-b-70 p-t-70 demo-hero-5" data-pages-bg-image="/assets/images/gallery_hero_2.jpg">
-    </section>
-    <!-- BEGIN CONTENT SECTION -->
-    <section class="bg-master-lightest p-b-85 p-t-75">
-      <div class="container">
-        <div class="md-p-l-20 md-p-r-20 xs-no-padding">
-          <h5 class="block-title hint-text no-margin">Explore</h5>
-          <div class="row">
-            <div class="col-sm-5 col-md-4">
-              <h1 class="m-t-5">Trusted <br>all around the World.</h1>
-            </div>
-            <div class="col-sm-7 col-md-8 no-padding xs-p-l-15 xs-p-r-15">
-              <img src="/assets/images/logo_set.png" class="image-responsive-height lazy sm-m-t-30" alt="">
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
+
     <!-- START FOOTER -->
-    <footer class="p-t-25 p-b-25 bg-master-darkest">
+    <div class="clearfix"></div>
+    <footer class="p-t-25 p-b-25 bg-master-darkest" style="background-color: #2f98d4;">
       <div class="container">
         <div class="row">
           <div class="col-sm-8">
-            <img src="/assets/images/logo_white.png" class="logo inline m-r-50" alt="">
+            <img src="/assets/images/creek-logo-white.png" width="100" class="logo inline m-r-70" alt="">
             <div class="m-t-10 inline">
               <ul class="no-style fs-11 no-padding font-arial">
-                <li class="inline no-padding"><a href="#" class=" text-white p-r-15 b-r b-grey">Home</a></li>
+                <li class="inline no-padding"><a href="/index.html" class=" text-white p-r-15 b-r b-grey">Home</a></li>
                 <li class="inline no-padding"><a href="/about/index.html" class=" text-white p-l-15 p-r-15 b-r b-grey">About</a></li>
                 <li class="inline no-padding"><a href="/studies/index.html" class=" text-white p-l-15 p-r-15 b-r b-grey">Studies</a></li>
                 <li class="inline no-padding"><a href="/recognition/index.html" class=" text-white p-l-15 p-r-15 xs-no-padding xs-m-t-10  b-r b-grey">Recognition</a></li>
@@ -349,7 +227,7 @@
               </ul>
             </div>
           </div>
-          <div class="col-sm-4 text-right sm-text-left font-arial">
+          <div class="col-sm-4 text-right text-white sm-text-left font-arial">
             <p class="fs-11 m-t-10">Copyright &copy; 2016 Arcade Creek Project. All Rights Reserved.</p>
           </div>
         </div>
@@ -368,10 +246,10 @@
     <!-- Isotope plugin arranges the card layout -->
     <script src="/assets/plugins/jquery-isotope/isotope.pkgd.min.js" type="text/javascript"></script>
     <!-- BEGIN RETINA IMAGE LOADER -->
-    <script type="/text/javascript" src="/assets/plugins/jquery-unveil/jquery.unveil.min.js"></script>
+    <script type="text/javascript" src="/assets/plugins/jquery-unveil/jquery.unveil.min.js"></script>
     <!-- END VENDOR JS -->
     <!-- BEGIN PAGES FRONTEND LIB -->
-    <script type="/text/javascript" src="/assets/pages/js/pages.frontend.js"></script>
+    <script type="text/javascript" src="/assets/pages/js/pages.frontend.js"></script>
     <!-- END PAGES LIB -->
     <!-- BEGIN YOUR CUSTOM JS -->
     <script src="/assets/js/custom.js" type="text/javascript"></script>
