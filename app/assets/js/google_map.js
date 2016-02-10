@@ -11,17 +11,18 @@
     google.maps.event.addDomListener(window, 'load', init);
 
     var map;
-    var zoomLevel = 11;
+    var zoomLevel = 15;
 
     function init() {
         // Basic options for a simple Google Map
         // For more options see: https://developers.google.com/maps/documentation/javascript/reference#MapOptions
         var mapOptions = {
             // How zoomed in you want the map to start at (always required)
+            mapTypeId: google.maps.MapTypeId.SATELLITE,
             zoom: zoomLevel,
             disableDefaultUI: true,
             // The latitude and longitude to center the map (always required)
-            center: new google.maps.LatLng(40.6700, -73.9400), // New York
+            center: new google.maps.LatLng(38.644,-121.3624874,3023), // Arcade Creek
             scrollwheel: false,
             // Map styling
             styles: [{
@@ -135,7 +136,7 @@
             }]
         };
 
-        // Get the HTML DOM element that will contain your map 
+        // Get the HTML DOM element that will contain your map
         // We are using a div with id="map" seen below in the <body>
         var mapElement = document.getElementById('google-map');
 
