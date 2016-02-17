@@ -22,7 +22,7 @@
             zoom: zoomLevel,
             disableDefaultUI: true,
             // The latitude and longitude to center the map (always required)
-            center: new google.maps.LatLng(38.644,-121.3624874,3023), // Arcade Creek
+            center: new google.maps.LatLng(38.644,-121.36,3023), // Arcade Creek
             scrollwheel: false,
             // Map styling
             styles: [{
