@@ -4,7 +4,7 @@ CSS styles used on the home page
 
 .hero_background {
   background-image : linear-gradient(to right, rgba(30, 160, 100, 0.0), rgba(48, 179, 103, 0.0)),
-                      url(http://localhost:3000/assets/images/home/creek1.jpg);
+                      url('/assets/images/home/creek1.jpg');
 
 
   background-repeat : no-repeat,
