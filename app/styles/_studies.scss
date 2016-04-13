@@ -175,3 +175,15 @@
     background-image: linear-gradient(to right, rgba(47,152,212,0.6),rgba(47,152,212,0.5)), url("../assets/images/studies/vertebrates/vertebrates-1.jpg");
   }
 }
+
+.modal-description {
+  padding: 10px 0px;
+}
+
+.modal-btns {
+  display: flex;
+  justify-content: center;
+  .btn {
+    margin: 10px
+  }
+}
