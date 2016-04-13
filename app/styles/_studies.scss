@@ -73,7 +73,7 @@
   }
 }
 
-.studies-grid figure:hover {
+.studies-grid figure:hover, .studies-grid figure.active {
   img {
     opacity: 0.4;
   }
@@ -94,84 +94,84 @@
 
 .studies-overview {
   background-image: linear-gradient(to right, rgba(0,0,0,0.2),rgba(0,0,0,0.2)), url("../assets/images/studies/overview.jpg");
-  &:hover {
+  &:hover, &.active {
     background-image: linear-gradient(to right, rgba(47,152,212,0.6),rgba(47,152,212,0.5)), url("../assets/images/studies/overview.jpg");
   }
 }
 
 .studies-bioassay {
   background-image: linear-gradient(to right, rgba(0,0,0,0.2),rgba(0,0,0,0.2)), url("../assets/images/studies/bioassay/bioassay-1.jpg");
-  &:hover {
+  &:hover, &.active {
     background-image: linear-gradient(to right, rgba(47,152,212,0.6),rgba(47,152,212,0.5)), url("../assets/images/studies/bioassay/bioassay-1.jpg");
   }
 }
 
 .studies-bioassessment {
   background-image: linear-gradient(to right, rgba(0,0,0,0.2),rgba(0,0,0,0.2)), url("../assets/images/studies/bioassessment/bioassessment-1.jpg");
-  &:hover {
+  &:hover, &.active {
     background-image: linear-gradient(to right, rgba(47,152,212,0.6),rgba(47,152,212,0.5)), url("../assets/images/studies/bioassessment/bioassessment-1.jpg");
   }
 }
 
 .studies-botany {
   background-image: linear-gradient(to right, rgba(0,0,0,0.2),rgba(0,0,0,0.2)), url("../assets/images/studies/botany/botany-1.jpg");
-  &:hover {
+  &:hover, &.active {
     background-image: linear-gradient(to right, rgba(47,152,212,0.6),rgba(47,152,212,0.5)), url("../assets/images/studies/botany/botany-1.jpg");
   }
 }
 
 .studies-chemistry {
   background-image: linear-gradient(to right, rgba(0,0,0,0.2),rgba(0,0,0,0.2)), url("../assets/images/studies/chemistry/chemistry-1.jpg");
-  &:hover {
+  &:hover, &.active {
     background-image: linear-gradient(to right, rgba(47,152,212,0.6),rgba(47,152,212,0.5)), url("../assets/images/studies/chemistry/chemistry-1.jpg");
   }
 }
 
 .studies-habitat {
   background-image: linear-gradient(to right, rgba(0,0,0,0.2),rgba(0,0,0,0.2)), url("../assets/images/studies/habitat/habitat-1.jpg");
-  &:hover {
+  &:hover, &.active {
     background-image: linear-gradient(to right, rgba(47,152,212,0.6),rgba(47,152,212,0.5)), url("../assets/images/studies/habitat/habitat-1.jpg");
   }
 }
 
 .studies-longmapping {
   background-image: linear-gradient(to right, rgba(0,0,0,0.2),rgba(0,0,0,0.2)), url("../assets/images/studies/longmapping/longmapping-1.jpg");
-  &:hover {
+  &:hover, &.active {
     background-image: linear-gradient(to right, rgba(47,152,212,0.6),rgba(47,152,212,0.5)), url("../assets/images/studies/longmapping/longmapping-1.jpg");
   }
 }
 
 .studies-outreach {
   background-image: linear-gradient(to right, rgba(0,0,0,0.2),rgba(0,0,0,0.2)), url("../assets/images/studies/outreach/outreach-1.jpg");
-  &:hover {
+  &:hover, &.active {
     background-image: linear-gradient(to right, rgba(47,152,212,0.6),rgba(47,152,212,0.5)), url("../assets/images/studies/outreach/outreach-1.jpg");
   }
 }
 
 .studies-restoration {
   background-image: linear-gradient(to right, rgba(0,0,0,0.2),rgba(0,0,0,0.2)), url("../assets/images/studies/restoration/restoration-1.jpg");
-  &:hover {
+  &:hover, &.active {
     background-image: linear-gradient(to right, rgba(47,152,212,0.6),rgba(47,152,212,0.5)), url("../assets/images/studies/restoration/restoration-1.jpg");
   }
 }
 
 .studies-sediments {
   background-image: linear-gradient(to right, rgba(0,0,0,0.2),rgba(0,0,0,0.2)), url("../assets/images/studies/sediments/sediments-1.jpg");
-  &:hover {
+  &:hover, &.active {
     background-image: linear-gradient(to right, rgba(47,152,212,0.6),rgba(47,152,212,0.5)), url("../assets/images/studies/sediments/sediments-1.jpg");
   }
 }
 
 .studies-technology {
   background-image: linear-gradient(to right, rgba(0,0,0,0.2),rgba(0,0,0,0.2)), url("../assets/images/studies/technology/technology-1.jpg");
-  &:hover {
+  &:hover, &.active {
     background-image: linear-gradient(to right, rgba(47,152,212,0.6),rgba(47,152,212,0.5)), url("../assets/images/studies/technology/technology-1.jpg");
   }
 }
 
 .studies-vertebrates {
   background-image: linear-gradient(to right, rgba(0,0,0,0.2),rgba(0,0,0,0.2)), url("../assets/images/studies/vertebrates/vertebrates-1.jpg");
-  &:hover {
+  &:hover, &.active {
     background-image: linear-gradient(to right, rgba(47,152,212,0.6),rgba(47,152,212,0.5)), url("../assets/images/studies/vertebrates/vertebrates-1.jpg");
   }
 }

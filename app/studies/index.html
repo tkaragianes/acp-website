@@ -110,19 +110,19 @@
             <div class="col-md-9 col-md-offset-3 col-sm-8 col-sm-offset-2 p-t-15 p-b-15">
               <ul class="no-style no-margin">
                 <li class="m-r-20 m-l-20 inline sm-block text-center sm-p-b-5 sm-m-b-5 b-grey sm-b-b">
-                  <a href="#" class="link active text-black fs-13 block-title ">Flora</a>
+                  <a href="#flora" class="link active text-black fs-13 block-title toggle-flora">Flora</a>
                 </li>
                 <li class="m-r-20 m-l-20 inline sm-block text-center sm-p-b-5 sm-m-b-5 b-grey sm-b-b">
-                  <a href="#" class="link active text-black fs-13 block-title">Fauna</a>
+                  <a href="#fauna" class="link active text-black fs-13 block-title toggle-fauna">Fauna</a>
                 </li>
                 <li class="m-r-20 m-l-20 inline sm-block text-center sm-p-b-5 sm-m-b-5 b-grey sm-b-b">
-                  <a href="#" class="link active text-black fs-13 block-title">Laboratory</a>
+                  <a href="#laboratory" class="link active text-black fs-13 block-title toggle-laboratory">Laboratory</a>
                 </li>
                 <li class="m-r-20 m-l-20 inline sm-block text-center sm-p-b-5 sm-m-b-5 b-grey sm-b-b">
-                  <a href="#" class="link active text-black fs-13 block-title">Physical Features</a>
+                  <a href="#physical" class="link active text-black fs-13 block-title toggle-physical">Physical Features</a>
                 </li>
                 <li class="m-r-20 m-l-20 inline sm-block text-center ">
-                  <a href="#" class="link active text-black fs-13 block-title">Synthesis</a>
+                  <a href="#synthesis" class="link active text-black fs-13 block-title toggle-synthesis">Synthesis</a>
                 </li>
               </ul>
             </div>
@@ -319,6 +319,37 @@
     <script src="/assets/js/custom.js" type="text/javascript"></script>
     <script src="/assets/js/gallery.js" type="text/javascript"></script>
     <script>
+      $('.toggle-flora').on("click", function(event){
+        $('.studies-grid figure').removeClass("active");
+        $('.studies-botany').addClass("active");
+        $('.studies-habitat').addClass("active");
+      })
+
+      $('.toggle-fauna').on("click", function(event){
+        $('.studies-grid figure').removeClass("active");
+        $('.studies-bioassessment').addClass("active");
+        $('.studies-vertebrates').addClass("active");
+      })
+
+      $('.toggle-laboratory').on("click", function(event){
+        $('.studies-grid figure').removeClass("active");
+        $('.studies-bioassay').addClass("active");
+        $('.studies-chemistry').addClass("active");
+        $('.studies-sediments').addClass("active");
+      })
+
+      $('.toggle-physical').on("click", function(event){
+        $('.studies-grid figure').removeClass("active");
+        $('.studies-longmapping').addClass("active");
+        $('.studies-restoration').addClass("active");
+      })
+
+      $('.toggle-synthesis').on("click", function(event){
+        $('.studies-grid figure').removeClass("active");
+        $('.studies-outreach').addClass("active");
+        $('.studies-technology').addClass("active");
+      })
+
       $('[data-toggle=modal]').on("click", function(event){
         var target = event.target.dataset.study;
         // console.log(target);
