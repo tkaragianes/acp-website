@@ -133,19 +133,20 @@
             </div>
             <div class="tab-pane" id="tab-protocols">
               <h3>How we do it</h3>
-              <p>Biological assay follows standard scientific procedures to obtain their data. By clicking on the button, you can download the most recent version of the protocol in PDF form.</p>
+              <p>Biological assay follows standard scientific procedures to obtain their data. By clicking on the button, you can view the most recent version of the protocol.</p>
               <br>
               <p class="pull-right">
-                <button class="btn btn-success btn-cons" type="button">Download Protocol</button>
+                  <button class="btn btn-success btn-success" type="button" target="_blank" onclick="javascript:goToURL('/studies/bioassay/Bio_Assay_Protocol_2016.pdf')">Download Protocol</button>
               </p>
             </div>
             <div class="tab-pane" id="tab-data">
               <h3>What we've found</h3>
-              <p>You can download our most recent data in spreadsheet form by clicking on the button below.</p>
+              <p>You can download our most recent data by clicking on the buttons below.</p>
               <br>
                 <br>
                 <p class="pull-right">
-                <button class="btn btn-success btn-cons" type="button">Download Data</button>
+                <button class="btn btn-success btn-default" type="button" target="_blank" onclick="javascript:goToURL('/studies/bioassay/Bio_Assay_Spring_2015.xlsx')">Spring 2015</button>
+                <button class="btn btn-success btn-success" type="button" target="_blank" onclick="javascript:goToURL('/studies/bioassay/Bio_Assay_Fall_2015.xlsx')">Fall 2015</button>
               </p>
                 </br>
             </div>
@@ -195,4 +196,11 @@
     <!-- BEGIN YOUR CUSTOM JS -->
     <script type="text/javascript" src="/assets/js/custom.js"></script>
     <!-- END PAGES LIB -->
+    <!-- BEGIN BUTTON ACTIONS TO DOWNLOAD FILES -->
+    <script type="text/javascript">
+                    function goToURL(val){
+                        location.href = val; 
+                    }
+    </script>
+    <!-- END BUTTON ACTIONS TO DOWNLOAD FILES
 </html>

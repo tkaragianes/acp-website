@@ -131,18 +131,19 @@
             </div>
             <div class="tab-pane" id="tab-protocols">
               <h3>How we do it</h3>
-              <p>Sediments follows standard scientific procedures to obtain their data. By clicking on the button, you can download the most recent version of the protocol in PDF form.</p>
+              <p>Sediments follows standard scientific procedures to obtain their data. By clicking on the button, you can view the most recent version of the protocol.</p>
               <br>
               <p class="pull-right">
-                <button class="btn btn-success btn-cons" type="button">Download Protocol</button>
+                  <button class="btn btn-success btn-success" type="button" onclick="javascript:goToURL('/studies/sediments/Sediments_Protocol_2014.pdf')">Download Protocol</button>
               </p>
             </div>
             <div class="tab-pane" id="tab-data">
               <h3>What we've found</h3>
-              <p>You can download our most recent data in spreadsheet form by clicking on the button below.</p>
+              <p>You can download our most recent data by clicking on the buttons below.</p>
                 <br>
                 <p class="pull-right">
-                <button class="btn btn-success btn-cons" type="button">Download Data</button>
+                <button class="btn btn-success btn-default" type="button" onclick="javascript:goToURL('/studies/sediments/Spring2015.zip')">Spring 2015</button>
+                <button class="btn btn-success btn-success" type="button" onclick="javascript:goToURL('/studies/sediments/Fall2015.zip')">Fall 2015</button>
                 </p>
             </div>
           </div>
@@ -190,5 +191,11 @@
     <!-- END PAGES LIB -->
     <!-- BEGIN YOUR CUSTOM JS -->
     <script type="text/javascript" src="/assets/js/custom.js"></script>
+    <script type="text/javascript">
+                    function goToURL(val){
+                        location.href = val; 
+                    }
+    </script>
+    <!-- END BUTTON ACTIONS TO DOWNLOAD FILES
     <!-- END PAGES LIB -->
 </html>
