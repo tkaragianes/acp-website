@@ -349,6 +349,8 @@
       })
       $('[data-toggle=modal]').on("click", function(event){
         var target = event.target.dataset.study;
+        var protocolButton = document.getElementById("protocol_button");
+        var dataButton = document.getElementById("data_button");
         // console.log(target);
         switch (target) {
           case "bioassay":
@@ -359,7 +361,7 @@
             break;
           case "bioassessment":
             $('.modal-title').text("Bio Assessment");
-            $('.modal-description').text("Biological Assessment monitors populations of microscopic macroinvertebrates in the creek bed. Large populations of certain species indicate good health of the creek. Bio Assessment works most closely with the studies Bio Assay, Chemistry and Sediments to identify these instigators for change and to observe the trends in the health of the creek.");
+            $('.modal-description').text("Biological Assessment monitors populations of microscopic macroinvertebrates in the creek bed. Large populations of certain species indicate good health of the creek. Bio Assessment works most closely with the studies Bio Assay, Chemistry and Sediments to identify these instigators for change and to observe the trends in the health of the creek."); 
             $('.modal-btn-protocol').attr("href","/studies/bioassessment/protocol.pdf");
             $('.modal-btn-data').attr("href","/studies/bioassessment/data.xls");
             break;
@@ -377,7 +379,7 @@
             break;
           case "habitat":
             $('.modal-title').text("Habitat");
-            $('.modal-description').text("Within the Habitat study, students gather data on trees and bushes in the riparian corridor, including average diameter and foliage coverage, in order to determine how the creek changes from year to year, and from season to season, and to assess the creek's suitability as a habitat.");
+            $('.modal-description').text("Within the Habitat study, students gather data on trees and bushes in the riparian corridor, including average diameter and foliage coverage, in order to determine how the creek changes from year to year, and from season to season, and to assess the creek's suitability as a habitat.");          
             $('.modal-btn-protocol').attr("href","/studies/habitat/protocol.pdf");
             $('.modal-btn-data').attr("href","/studies/habitat/data.xls");
             break;
@@ -390,8 +392,6 @@
           case "outreach":
             $('.modal-title').text("Outreach");
             $('.modal-description').text("The Outreach group presents the tasks, results, and accomplishments of the Arcade Creek Project to various people, including schoolchildren, politicians, and environmentalists.");
-            var protocolButton = document.getElementById("protocol_button");
-            var dataButton = document.getElementById("data_button");
             protocolButton.parentNode.removeChild(protocolButton);
             dataButton.parentNode.removeChild(dataButton);
             break;
@@ -410,12 +410,12 @@
           case "technology":
             $('.modal-title').text("Technology");
             $('.modal-description').text("The Technology team is responsible for managing creek data and publicizing the Arcade Creek Project through informational videos and this website. Tech is organized into 3 subdivisions: Data, Web, and Video. The Data group is responsible for Dashboard, a portal through which students and teachers can monitor their participation in the Arcade Creek Project. The Web group is responsible for maintaining this website with new information as it arrives. The Video group is responsible for producing informational media.");
-            $('.modal-btn-protocol').attr("href","/studies/technology/Technology_Protocol_2014.pdf");                        var dataButton = document.getElementById("data_button");
+            $('.modal-btn-protocol').attr("href","/studies/technology/Technology_Protocol_2014.pdf");                       
             dataButton.parentNode.removeChild(dataButton);
             break;
           case "vertebrates":
             $('.modal-title').text("Vertebrates");
-            $('.modal-description').text("The Vertebrate group monitors the populations of bird and other vertebrate species at the creek. Indicator species that are closely monitored include the Yellow-billed Magpie, California Quail, Mallard Duck, and Acorn Woodpecker. Their presence, absence, or relative well-being is reflective of the health of its ecosystem as a whole.");
+            $('.modal-description').text("The Vertebrate group monitors the populations of bird and other vertebrate species at the creek. Indicator species that are closely monitored include the Yellow-billed Magpie, California Quail, Mallard Duck, and Acorn Woodpecker. Their presence, absence, or relative well-being is reflective of the health of its ecosystem as a whole.");                          
             $('.modal-btn-protocol').attr("href","/studies/vertebrates/protocol.pdf");
             $('.modal-btn-data').attr("href","/studies/vertebrates/data.xls");
             break;
