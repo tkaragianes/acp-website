@@ -361,9 +361,9 @@
             break;
           case "bioassessment":
             $('.modal-title').text("Bio Assessment");
-            $('.modal-description').text("Biological Assessment monitors populations of microscopic macroinvertebrates in the creek bed. Large populations of certain species indicate good health of the creek. Bio Assessment works most closely with the studies Bio Assay, Chemistry and Sediments to identify these instigators for change and to observe the trends in the health of the creek."); 
-            $('.modal-btn-protocol').attr("href","/studies/bioassessment/protocol.pdf");
-            $('.modal-btn-data').attr("href","/studies/bioassessment/data.xls");
+            $('.modal-description').text("Biological Assessment monitors populations of macroinvertebrates in the creek bed. Large populations of EPT taxa indicate good health of the creek. Bio Assessment works most closely with the studies Bio Assay, Chemistry and Sediments to identify these instigators for toxicity and to observe trends in the health of the creek."); 
+            $('.modal-btn-protocol').attr("href","/studies/bioassessment/BioAssessmentProtocol.pdf");
+            $('.modal-btn-data').attr("href","/studies/bioassessment/BioAssessmentData.pdf");
             break;
           case "botany":
             $('.modal-title').text("Botany");
@@ -375,7 +375,7 @@
             $('.modal-title').text("Chemistry");
             $('.modal-description').text("The Chemistry group monitors the chemical content of the creek water. Measurements of dissolved oxygen, pH, temperature, and various metallic ions are taken. These data can then be used to determine if the water is chemically appropriate for most life at the creek.");
             $('.modal-btn-protocol').attr("href","/studies/chemistry/ChemistryProtocol.pdf");
-            $('.modal-btn-data').attr("href","/studies/chemistry/data.xls");
+            $('.modal-btn-data').attr("href","/studies/chemistry/Data.zip");
             break;
           case "habitat":
             $('.modal-title').text("Habitat");
@@ -387,7 +387,7 @@
             $('.modal-title').text("Long Mapping");
             $('.modal-description').text("The Long Mapping group maps the general shape and flow of the creek. They measure creek banks and soil build-up or erosion. The Long Mapping group provides a geographical reference for other studies to pinpoint locations at the creek.");
             $('.modal-btn-protocol').attr("href","/studies/longmapping/LongMappingProtocol.pdf");
-            $('.modal-btn-data').attr("href","/studies/longmapping/data.xls");
+            dataButton.parentNode.removeChild(dataButton);
             break;
           case "outreach":
             $('.modal-title').text("Outreach");
@@ -397,9 +397,9 @@
             break;
           case "restoration":
             $('.modal-title').text("Restoration");
-            $('.modal-description').text("At the creek, Restoration directly aids the creek by removing invasive species and monitoring the overall progress of the ecosystem. The study is responsible for the removal of debris that creates dams throughout the creek as well. This helps with water flow and overall health of the creek. Restoration also collects trash, which may be very dangerous to the creek.");
-            $('.modal-btn-protocol').attr("href","/studies/restoration/protocol.pdf");
-            $('.modal-btn-data').attr("href","/studies/restoration/data.xls");
+            $('.modal-description').text("Restoration is responsible for directly reducing or correcting damage done to the creek’s fragile ecosystem. Students identify and eradicate invasive plant species, collect trash, remove litter and debris, and reintroduce native plant species to the area.");
+            $('.modal-btn-protocol').attr("href","/studies/restoration/RestorationProtocol.pdf");
+            dataButton.parentNode.removeChild(dataButton);
             break;
           case "sediments":
             $('.modal-title').text("Sediments");
@@ -416,7 +416,7 @@
           case "vertebrates":
             $('.modal-title').text("Vertebrates");
             $('.modal-description').text("The Vertebrate group monitors the populations of bird and other vertebrate species at the creek. Indicator species that are closely monitored include the Yellow-billed Magpie, California Quail, Mallard Duck, and Acorn Woodpecker. Their presence, absence, or relative well-being is reflective of the health of its ecosystem as a whole.");                          
-            $('.modal-btn-protocol').attr("href","/studies/vertebrates/protocol.pdf");
+            $('.modal-btn-protocol').attr("href","/studies/vertebrates/VertebratesProtocol.pdf");
             $('.modal-btn-data').attr("href","/studies/vertebrates/VertebratesData.zip");
             break;
         }
