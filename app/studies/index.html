@@ -265,7 +265,7 @@
                     <h5 class="modal-title">Studies Overview</h5>
                 </div>
                 <div class="modal-body">
-                  Video
+                  <iframe width="560" height="315" src="https://www.youtube.com/embed/Xdo-kEPdoOg" frameborder="0" allowfullscreen></iframe>
                 </div>
             </div>
             </div>
@@ -284,12 +284,14 @@
                     <h5 class="modal-title">Title</h5>
                 </div>
                 <div class="modal-body">
+                    <br>
                   <div class="modal-description">
                     Content goes here.
                   </div>
+                    <br>
                   <div class="modal-btns">
-                    <a href="" class="btn btn-primary modal-btn-protocol">Protocol</a>
-                    <a href="" class="btn btn-primary modal-btn-data">Data</a>
+                    <a href="" class="btn btn-primary modal-btn-protocol" id="protocol_button">Protocol</a>
+                    <a href="" class="btn btn-primary modal-btn-data" id="data_button">Data</a>
                   </div>
                 </div>
             </div>
@@ -324,26 +326,22 @@
         $('.studies-botany').addClass("active");
         $('.studies-habitat').addClass("active");
       })
-
       $('.toggle-fauna').on("click", function(event){
         $('.studies-grid figure').removeClass("active");
         $('.studies-bioassessment').addClass("active");
         $('.studies-vertebrates').addClass("active");
       })
-
       $('.toggle-laboratory').on("click", function(event){
         $('.studies-grid figure').removeClass("active");
         $('.studies-bioassay').addClass("active");
         $('.studies-chemistry').addClass("active");
         $('.studies-sediments').addClass("active");
       })
-
       $('.toggle-physical').on("click", function(event){
         $('.studies-grid figure').removeClass("active");
         $('.studies-longmapping').addClass("active");
         $('.studies-restoration').addClass("active");
       })
-
       $('.toggle-synthesis').on("click", function(event){
         $('.studies-grid figure').removeClass("active");
         $('.studies-outreach').addClass("active");
@@ -352,75 +350,76 @@
 
       $('[data-toggle=modal]').on("click", function(event){
         var target = event.target.dataset.study;
+        var protocolButton = document.getElementById("protocol_button");
+        var dataButton = document.getElementById("data_button");
         // console.log(target);
         switch (target) {
           case "bioassay":
             $('.modal-title').text("Bio Assay");
-            $('.modal-description').text("Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore sunt consequatur facere dolorum perspiciatis illum iste quae nihil ut. Perspiciatis consequuntur, quibusdam laudantium corporis nostrum, magnam esse doloremque sed dolor.");
-            $('.modal-btn-protocol').attr("href","/studies/bioassay/protocol.pdf");
-            $('.modal-btn-data').attr("href","/studies/bioassay/data.xls");
+            $('.modal-description').text("Biological assay assesses the relative toxicity of creek water by calculating the survival rate of the indicator species Ceriodaphnia dubia over 48 hours. Our rigorous protocol, modeled after the EPA guidelines, involves testing reference toxicants/Wasser water controls, performing pH/conductivity tests, and peer checking to ensure the validity of our data. We would like to thank the Chemistry study for their continued support in providing us with water samples from the creek.");
+            $('.modal-btn-protocol').attr("href","/studies/bioassay/Bio_Assay_Protocol_2016.pdf");
+            $('.modal-btn-data').attr("href","/studies/bioassay/BioAssayData.zip");
             break;
           case "bioassessment":
             $('.modal-title').text("Bio Assessment");
-            $('.modal-description').text("Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore sunt consequatur facere dolorum perspiciatis illum iste quae nihil ut. Perspiciatis consequuntur, quibusdam laudantium corporis nostrum, magnam esse doloremque sed dolor.");
-            $('.modal-btn-protocol').attr("href","/studies/bioassessment/protocol.pdf");
-            $('.modal-btn-data').attr("href","/studies/bioassessment/data.xls");
+            $('.modal-description').text("Biological Assessment monitors populations of macroinvertebrates in the creek bed. Large populations of EPT taxa indicate good health of the creek. Bio Assessment works most closely with the studies Bio Assay, Chemistry and Sediments to identify these instigators for toxicity and to observe trends in the health of the creek.");
+            $('.modal-btn-protocol').attr("href","/studies/bioassessment/BioAssessmentProtocol.pdf");
+            $('.modal-btn-data').attr("href","/studies/bioassessment/BioAssessmentData.pdf");
             break;
           case "botany":
             $('.modal-title').text("Botany");
-            $('.modal-description').text("Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore sunt consequatur facere dolorum perspiciatis illum iste quae nihil ut. Perspiciatis consequuntur, quibusdam laudantium corporis nostrum, magnam esse doloremque sed dolor.");
-            $('.modal-btn-protocol').attr("href","/studies/botany/protocol.pdf");
-            $('.modal-btn-data').attr("href","/studies/botany/data.xls");
+            $('.modal-description').text("The Botanical Survey (Botany) study collects, preserves, and identifies samples of plants that grow along the riparian corridor of the Arcade Creek. Botany maintains a database of the invasive species and native species present at each site along the arcade creek, facilitating year to year comparisons and allowing a direct method of checking when certain species spread, or disappeared, from specific locations.");
+            $('.modal-btn-protocol').attr("href","/studies/botany/BotanyProtocol.pdf");
+            $('.modal-btn-data').attr("href","/studies/botany/BotanyData.zip");
             break;
           case "chemistry":
             $('.modal-title').text("Chemistry");
-            $('.modal-description').text("Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore sunt consequatur facere dolorum perspiciatis illum iste quae nihil ut. Perspiciatis consequuntur, quibusdam laudantium corporis nostrum, magnam esse doloremque sed dolor.");
-            $('.modal-btn-protocol').attr("href","/studies/chemistry/protocol.pdf");
-            $('.modal-btn-data').attr("href","/studies/chemistry/data.xls");
+            $('.modal-description').text("The Chemistry group monitors the chemical content of the creek water. Measurements of dissolved oxygen, pH, temperature, and various metallic ions are taken. These data can then be used to determine if the water is chemically appropriate for most life at the creek.");
+            $('.modal-btn-protocol').attr("href","/studies/chemistry/ChemistryProtocol.pdf");
+            $('.modal-btn-data').attr("href","/studies/chemistry/Data.zip");
             break;
           case "habitat":
             $('.modal-title').text("Habitat");
-            $('.modal-description').text("Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore sunt consequatur facere dolorum perspiciatis illum iste quae nihil ut. Perspiciatis consequuntur, quibusdam laudantium corporis nostrum, magnam esse doloremque sed dolor.");
-            $('.modal-btn-protocol').attr("href","/studies/habitat/protocol.pdf");
-            $('.modal-btn-data').attr("href","/studies/habitat/data.xls");
+            $('.modal-description').text("Within the Habitat study, students gather data on trees and bushes in the riparian corridor, including average diameter and foliage coverage, in order to determine how the creek changes from year to year, and from season to season, and to assess the creek's suitability as a habitat.");
+            $('.modal-btn-protocol').attr("href","/studies/habitat/HabitatProtocol.pdf");
+            $('.modal-btn-data').attr("href","/studies/habitat/HabitatData.zip");
             break;
           case "longmapping":
             $('.modal-title').text("Long Mapping");
-            $('.modal-description').text("Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore sunt consequatur facere dolorum perspiciatis illum iste quae nihil ut. Perspiciatis consequuntur, quibusdam laudantium corporis nostrum, magnam esse doloremque sed dolor.");
-            $('.modal-btn-protocol').attr("href","/studies/longmapping/protocol.pdf");
-            $('.modal-btn-data').attr("href","/studies/longmapping/data.xls");
+            $('.modal-description').text("The Long Mapping group maps the general shape and flow of the creek. They measure creek banks and soil build-up or erosion. The Long Mapping group provides a geographical reference for other studies to pinpoint locations at the creek.");
+            $('.modal-btn-protocol').attr("href","/studies/longmapping/LongMappingProtocol.pdf");
+            dataButton.parentNode.removeChild(dataButton);
             break;
           case "outreach":
             $('.modal-title').text("Outreach");
-            $('.modal-description').text("Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore sunt consequatur facere dolorum perspiciatis illum iste quae nihil ut. Perspiciatis consequuntur, quibusdam laudantium corporis nostrum, magnam esse doloremque sed dolor.");
-            $('.modal-btn-protocol').attr("href","/studies/outreach/protocol.pdf");
-            $('.modal-btn-data').attr("href","/studies/outreach/data.xls");
+            $('.modal-description').text("The Outreach group presents the tasks, results, and accomplishments of the Arcade Creek Project to various people, including schoolchildren, politicians, and environmentalists.");
+            protocolButton.parentNode.removeChild(protocolButton);
+            dataButton.parentNode.removeChild(dataButton);
             break;
           case "restoration":
             $('.modal-title').text("Restoration");
-            $('.modal-description').text("Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore sunt consequatur facere dolorum perspiciatis illum iste quae nihil ut. Perspiciatis consequuntur, quibusdam laudantium corporis nostrum, magnam esse doloremque sed dolor.");
-            $('.modal-btn-protocol').attr("href","/studies/restoration/protocol.pdf");
-            $('.modal-btn-data').attr("href","/studies/restoration/data.xls");
+            $('.modal-description').text("Restoration is responsible for directly reducing or correcting damage done to the creek’s fragile ecosystem. Students identify and eradicate invasive plant species, collect trash, remove litter and debris, and reintroduce native plant species to the area.");
+            $('.modal-btn-protocol').attr("href","/studies/restoration/RestorationProtocol.pdf");
+            dataButton.parentNode.removeChild(dataButton);
             break;
           case "sediments":
             $('.modal-title').text("Sediments");
-            $('.modal-description').text("Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore sunt consequatur facere dolorum perspiciatis illum iste quae nihil ut. Perspiciatis consequuntur, quibusdam laudantium corporis nostrum, magnam esse doloremque sed dolor.");
-            $('.modal-btn-protocol').attr("href","/studies/sediments/protocol.pdf");
-            $('.modal-btn-data').attr("href","/studies/sediments/data.xls");
+            $('.modal-description').text("Sediments works to characterize the health of the Arcade Creek by monitoring the size, chemical properties, and physical properties of sediment collected along the length of the creek. These sediments are then analyzed back in school classrooms for characteristics that may indicate pollution and eutrophication.");
+            $('.modal-btn-protocol').attr("href","/studies/sediments/SedimentsProtocol.pdf");
+            $('.modal-btn-data').attr("href","/studies/sediments/SedimentsData.zip");
             break;
           case "technology":
             $('.modal-title').text("Technology");
-            $('.modal-description').text("Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore sunt consequatur facere dolorum perspiciatis illum iste quae nihil ut. Perspiciatis consequuntur, quibusdam laudantium corporis nostrum, magnam esse doloremque sed dolor.");
-            $('.modal-btn-protocol').attr("href","/studies/technology/protocol.pdf");
-            $('.modal-btn-data').attr("href","/studies/technology/data.xls");
+            $('.modal-description').text("The Technology team is responsible for managing creek data and publicizing the Arcade Creek Project through informational videos and this website. Tech is organized into 3 subdivisions: Data, Web, and Video. The Data group is responsible for Dashboard, a portal through which students and teachers can monitor their participation in the Arcade Creek Project. The Web group is responsible for maintaining this website with new information as it arrives. The Video group is responsible for producing informational media.");
+            $('.modal-btn-protocol').attr("href","/studies/technology/Technology_Protocol_2014.pdf");
+            dataButton.parentNode.removeChild(dataButton);
             break;
           case "vertebrates":
             $('.modal-title').text("Vertebrates");
-            $('.modal-description').text("Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore sunt consequatur facere dolorum perspiciatis illum iste quae nihil ut. Perspiciatis consequuntur, quibusdam laudantium corporis nostrum, magnam esse doloremque sed dolor.");
-            $('.modal-btn-protocol').attr("href","/studies/vertebrates/protocol.pdf");
-            $('.modal-btn-data').attr("href","/studies/vertebrates/data.xls");
+            $('.modal-description').text("The Vertebrate group monitors the populations of bird and other vertebrate species at the creek. Indicator species that are closely monitored include the Yellow-billed Magpie, California Quail, Mallard Duck, and Acorn Woodpecker. Their presence, absence, or relative well-being is reflective of the health of its ecosystem as a whole.");
+            $('.modal-btn-protocol').attr("href","/studies/vertebrates/VertebratesProtocol.pdf");
+            $('.modal-btn-data').attr("href","/studies/vertebrates/VertebratesData.zip");
             break;
-
         }
       })
     </script>
