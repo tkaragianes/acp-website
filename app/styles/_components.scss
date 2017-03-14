@@ -1,0 +1,23 @@
+/*
+   General components - header, footer, etc - used on multiple pages
+   Also a few general purpose overrides
+*/
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Roboto Slab", "Open Sans", "Helvetica", sans-serif;
+  font-weight: 300;
+}
+
+// nav.header .menu > li > a {
+//   opacity: 1 !important;
+//   transition: all 0.3s;
+// }
+//
+// nav.header .menu > li > a.active {
+//   color: #44b2e4 !important;
+//   border: 2px solid #44b2e4;
+// }
+//
+// nav.header .menu > li > a:hover {
+//   color:#ddd;
+// }

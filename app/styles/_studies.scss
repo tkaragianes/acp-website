@@ -1,0 +1,189 @@
+// .studies-hero {
+//   background-image: linear-gradient(to right, rgba(0,0,0,0.0),rgba(0,0,0,0.0)), url("../assets/images/studies/studies-hero.jpg");
+//   background-size: cover;
+// }
+.studies-grid {overflow-x:hidden;}
+
+.studies-grid figure {
+  width: 100vw;
+  height: 100vw;
+  position: relative;
+  // background-color: #2f98d4;
+  margin: 0;
+  float:left;
+  background-size: cover;
+  position: relative;
+  background-position: center center;
+
+  @media only screen and (min-width: 460px) {
+    width: 50vw;
+    height: 50vw;
+  }
+
+  @media only screen and (min-width: 992px) {
+    width: 25vw;
+    height: 25vw;
+  }
+}
+
+.studies-grid figcaption {
+  position: absolute;
+  width: 100%;
+  top:0; left:0; bottom: 0; right: 0;
+  padding: 1.2rem;
+
+
+  h2 {
+    position:relative;
+    color: #fff;
+  }
+
+  h2::after {
+    position: absolute;
+  	bottom: -0.5rem;
+  	left: 0;
+  	width: 0;
+  	height: 3px;
+  	background: #fff;
+  	content: '';
+  	-webkit-transition: all 0.35s;
+  	transition: all 0.35s;
+    opacity: 0;
+  }
+
+  p {
+    color: #fff;
+    padding: 1em 0;
+    opacity: 0;
+    -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+    transition: opacity 0.35s, transform 0.35s;
+    -webkit-transform: translate3d(120%,0,0);
+    transform: translate3d(120%,0,0);
+  }
+
+  a {
+    font-family: "Montserrat";
+    text-transform: uppercase;
+    color: #fff;
+    position: absolute;
+    bottom: 20px;
+    width: calc(100% - 40px);
+    text-align: center;
+    opacity: 0;
+  }
+}
+
+.studies-grid figure:hover, .studies-grid figure.active {
+  img {
+    opacity: 0.4;
+  }
+
+  h2::after {
+  	width: 100%;
+    opacity: 1;
+  }
+
+  p {
+  	opacity: 1;
+  	-webkit-transform: translate3d(0,0,0);
+  	transform: translate3d(0,0,0);
+  }
+
+  a {opacity: 1;}
+}
+
+.studies-overview {
+  background-image: linear-gradient(to right, rgba(0,0,0,0.2),rgba(0,0,0,0.2)), url("../assets/images/studies/overview.jpg");
+  &:hover, &.active {
+    background-image: linear-gradient(to right, rgba(47,152,212,0.6),rgba(47,152,212,0.5)), url("../assets/images/studies/overview.jpg");
+  }
+}
+
+.studies-bioassay {
+  background-image: linear-gradient(to right, rgba(0,0,0,0.2),rgba(0,0,0,0.2)), url("../assets/images/studies/bioassay/bioassay-1.jpg");
+  &:hover, &.active {
+    background-image: linear-gradient(to right, rgba(47,152,212,0.6),rgba(47,152,212,0.5)), url("../assets/images/studies/bioassay/bioassay-1.jpg");
+  }
+}
+
+.studies-bioassessment {
+  background-image: linear-gradient(to right, rgba(0,0,0,0.2),rgba(0,0,0,0.2)), url("../assets/images/studies/bioassessment/bioassessment-1.jpg");
+  &:hover, &.active {
+    background-image: linear-gradient(to right, rgba(47,152,212,0.6),rgba(47,152,212,0.5)), url("../assets/images/studies/bioassessment/bioassessment-1.jpg");
+  }
+}
+
+.studies-botany {
+  background-image: linear-gradient(to right, rgba(0,0,0,0.2),rgba(0,0,0,0.2)), url("../assets/images/studies/botany/botany-1.jpg");
+  &:hover, &.active {
+    background-image: linear-gradient(to right, rgba(47,152,212,0.6),rgba(47,152,212,0.5)), url("../assets/images/studies/botany/botany-1.jpg");
+  }
+}
+
+.studies-chemistry {
+  background-image: linear-gradient(to right, rgba(0,0,0,0.2),rgba(0,0,0,0.2)), url("../assets/images/studies/chemistry/chemistry-1.jpg");
+  &:hover, &.active {
+    background-image: linear-gradient(to right, rgba(47,152,212,0.6),rgba(47,152,212,0.5)), url("../assets/images/studies/chemistry/chemistry-1.jpg");
+  }
+}
+
+.studies-habitat {
+  background-image: linear-gradient(to right, rgba(0,0,0,0.2),rgba(0,0,0,0.2)), url("../assets/images/studies/habitat/habitat-1.jpg");
+  &:hover, &.active {
+    background-image: linear-gradient(to right, rgba(47,152,212,0.6),rgba(47,152,212,0.5)), url("../assets/images/studies/habitat/habitat-1.jpg");
+  }
+}
+
+.studies-longmapping {
+  background-image: linear-gradient(to right, rgba(0,0,0,0.2),rgba(0,0,0,0.2)), url("../assets/images/studies/longmapping/longmapping-1.jpg");
+  &:hover, &.active {
+    background-image: linear-gradient(to right, rgba(47,152,212,0.6),rgba(47,152,212,0.5)), url("../assets/images/studies/longmapping/longmapping-1.jpg");
+  }
+}
+
+.studies-outreach {
+  background-image: linear-gradient(to right, rgba(0,0,0,0.2),rgba(0,0,0,0.2)), url("../assets/images/studies/outreach/outreach-1.jpg");
+  &:hover, &.active {
+    background-image: linear-gradient(to right, rgba(47,152,212,0.6),rgba(47,152,212,0.5)), url("../assets/images/studies/outreach/outreach-1.jpg");
+  }
+}
+
+.studies-restoration {
+  background-image: linear-gradient(to right, rgba(0,0,0,0.2),rgba(0,0,0,0.2)), url("../assets/images/studies/restoration/restoration-1.jpg");
+  &:hover, &.active {
+    background-image: linear-gradient(to right, rgba(47,152,212,0.6),rgba(47,152,212,0.5)), url("../assets/images/studies/restoration/restoration-1.jpg");
+  }
+}
+
+.studies-sediments {
+  background-image: linear-gradient(to right, rgba(0,0,0,0.2),rgba(0,0,0,0.2)), url("../assets/images/studies/sediments/sediments-1.jpg");
+  &:hover, &.active {
+    background-image: linear-gradient(to right, rgba(47,152,212,0.6),rgba(47,152,212,0.5)), url("../assets/images/studies/sediments/sediments-1.jpg");
+  }
+}
+
+.studies-technology {
+  background-image: linear-gradient(to right, rgba(0,0,0,0.2),rgba(0,0,0,0.2)), url("../assets/images/studies/technology/technology-1.jpg");
+  &:hover, &.active {
+    background-image: linear-gradient(to right, rgba(47,152,212,0.6),rgba(47,152,212,0.5)), url("../assets/images/studies/technology/technology-1.jpg");
+  }
+}
+
+.studies-vertebrates {
+  background-image: linear-gradient(to right, rgba(0,0,0,0.2),rgba(0,0,0,0.2)), url("../assets/images/studies/vertebrates/vertebrates-1.jpg");
+  &:hover, &.active {
+    background-image: linear-gradient(to right, rgba(47,152,212,0.6),rgba(47,152,212,0.5)), url("../assets/images/studies/vertebrates/vertebrates-1.jpg");
+  }
+}
+
+.modal-description {
+  padding: 10px 0px;
+}
+
+.modal-btns {
+  display: flex;
+  justify-content: center;
+  .btn {
+    margin: 10px
+  }
+}
